@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  yes_or_no: false
+  bill_id: 
+  voter_id: 
+
+two:
+  yes_or_no: false
+  bill_id: 
+  voter_id: 
