@@ -41,6 +41,7 @@ class StaffersControllerTest < ActionController::TestCase
   end
 
   test "should be new bill button" do
-    assert_select("a", new_bill_path)
+    get :index
+    assert_select "a[href=?]", new_bill_path
   end
 end
