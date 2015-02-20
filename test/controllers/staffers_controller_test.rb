@@ -39,5 +39,8 @@ class StaffersControllerTest < ActionController::TestCase
     post :destroy, id: @staffer
     assert_response :success
   end
-
+  test "should render form partial" do
+    get :index, id: @staffer
+    render _form
+  end
 end
