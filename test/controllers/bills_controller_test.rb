@@ -26,18 +26,18 @@ class BillsControllerTest < ActionController::TestCase
   end
 
   test "should get update" do
-    post :update, id: @bill
-    assert_response :success
+    post :update, id: @bill, bill: {name: "HB104"}
+    assert_redirected_to root_path
   end
 
   test "should get create" do
-    post :create, id: @bill
-    assert_response :success
-  end
+    post :create, id: @bill, bill: {name: "HB104"}
+    assert_redirected_to root_path
+    end
 
   test "should get destroy" do
     post :destroy, id: @bill
-    assert_response :success
+    assert_redirected_to bills_url
   end
 
 end

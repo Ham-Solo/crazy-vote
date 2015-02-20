@@ -1,4 +1,5 @@
 class VotersController < ApplicationController
+  before_action :set_voter, only: [:show, :edit, :update, :destroy]
 
   def index
     @voters = Voter.all

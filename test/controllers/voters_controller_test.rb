@@ -26,18 +26,20 @@ class VotersControllerTest < ActionController::TestCase
   end
 
   test "should get create" do
-    post :create, id: @voter
-    assert_response :success
+    get :new
+    post :create, id: @voter, voter: {name: "Z", email: "z@z.com", password: "password"}
+    assert_redirected_to root_path
   end
 
   test "should get update" do
-    post :update, id: @voter
-    assert_response :success
+    get :new
+    post :update, id: @voter, voter: {name: "A"}
+    assert_redirected_to root_path
   end
 
   test "should get destroy" do
     post :destroy, id: @voter
-    assert_response :success
+    assert_redirected_to voter_url
   end
 
 end

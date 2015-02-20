@@ -26,21 +26,21 @@ class StaffersControllerTest < ActionController::TestCase
   end
 
   test "should get create" do
-    post :create, id: @staffer
-    assert_response :success
+    post :create, id: @staffer, staffer: {name: "Z", email: "z@z.com", password: "password"}
+    assert_redirected_to root_path
   end
 
   test "should get update" do
-    post :update, id: @staffer
-    assert_response :success
+    post :update, id: @staffer, staffer: {name: "Z"}
+    assert_redirected_to root_path
   end
 
   test "should get destroy" do
     post :destroy, id: @staffer
-    assert_response :success
+    assert_redirected_to staffer_path
   end
-  test "should render form partial" do
-    get :index, id: @staffer
-    render _form
+
+  test "should be new bill button" do
+    assert_select("a", new_bill_path)
   end
 end

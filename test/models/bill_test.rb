@@ -18,5 +18,5 @@ class BillTest < ActiveSupport::TestCase
   test "votes percentage" do
     assert_equal 60, bills(:one).percent_yes
   end
-  
+
 end

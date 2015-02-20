@@ -1,2 +1,30 @@
 <h1>Staffers#index</h1>
 <p>Find me in app/views/staffers/index.html.erb</p>
+<h1>Bills</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @staffers.each do |s| %>
+      <% s.bills.each do |b| %>
+        <tr>
+          <td><%= s.name %></td>
+          <td><%= s.email %></td>
+          <td><%= link_to 'Edit', edit_staffer_path(s) %></td>
+          <td><%= link_to 'Delete', s, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <tr>
+          <td><%= b.name %></td>
+          <td><%= b.description %></td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to 'New Bill', new_bill_path %>

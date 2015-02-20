@@ -1,4 +1,5 @@
 class StaffersController < ApplicationController
+  before_action :set_staffer, only: [:show, :edit, :update, :destroy]
 
   def index
     @staffers = Staffer.all
