@@ -11,10 +11,10 @@ class BillsController < ApplicationController
   def edit
   end
 
-  def update
+  def create
   end
 
-  def create
+  def update
   end
 
   def destroy

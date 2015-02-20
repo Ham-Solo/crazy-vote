@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  description: MyText
-  staffer_id: 
+  name: Bill
+  description: This is a bill
+  staffer_id: 1
 
 two:
   name: MyString
   description: MyText
-  staffer_id: 
+  staffer_id:

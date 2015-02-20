@@ -1,6 +1,10 @@
 require 'test_helper'
 
 class VotersControllerTest < ActionController::TestCase
+  setup do
+    @voter = voters(:one)
+  end
+
   test "should get index" do
     get :index
     assert_response :success
@@ -12,27 +16,27 @@ class VotersControllerTest < ActionController::TestCase
   end
 
   test "should get show" do
-    get :show
+    get :show, id: @voter
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit
+    get :edit, id: @voter
     assert_response :success
   end
 
   test "should get create" do
-    get :create
+    post :create, id: @voter
     assert_response :success
   end
 
   test "should get update" do
-    get :update
+    post :update, id: @voter
     assert_response :success
   end
 
   test "should get destroy" do
-    get :destroy
+    post :destroy, id: @voter
     assert_response :success
   end
 

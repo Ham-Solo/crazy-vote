@@ -1,6 +1,10 @@
 require 'test_helper'
 
 class BillsControllerTest < ActionController::TestCase
+  setup do
+    @bill = bills(:one)
+  end
+
   test "should get index" do
     get :index
     assert_response :success
@@ -12,27 +16,27 @@ class BillsControllerTest < ActionController::TestCase
   end
 
   test "should get show" do
-    get :show
+    get :show, id: @bill
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit
+    get :edit, id: @bill
     assert_response :success
   end
 
   test "should get update" do
-    get :update
+    post :update, id: @bill
     assert_response :success
   end
 
   test "should get create" do
-    get :create
+    post :create, id: @bill
     assert_response :success
   end
 
   test "should get destroy" do
-    get :destroy
+    post :destroy, id: @bill
     assert_response :success
   end
 
