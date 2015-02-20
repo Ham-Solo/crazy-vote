@@ -1,11 +1,26 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  email: dopple@dopple.com
-  name: Doppel
+  email: a@a.com
+  name: A
   password_digest: password
 
 two:
-  email: MyString
-  name: MyString
-  password_digest: MyString
+  email: b@b.com
+  name: B
+  password_digest: password
+
+three:
+  email: c@c.com
+  name: C
+  password_digest: password
+
+four:
+  email: d@d.com
+  name: D
+  password_digest: password
+
+five:
+  email: c@c.com
+  name: E
+  password_digest: password

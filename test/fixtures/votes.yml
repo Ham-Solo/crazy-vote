@@ -1,11 +1,50 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
 one:
-  yes_or_no: false
-  bill_id: 
-  voter_id: 
+  yes_or_no: true
+  bill: one
+  voter: one
 
 two:
+  yes_or_no: true
+  bill: one
+  voter: two
+
+three:
+  yes_or_no: true
+  bill: one
+  voter: three
+
+four:
   yes_or_no: false
-  bill_id: 
-  voter_id: 
+  bill: one
+  voter: four
+
+five:
+  yes_or_no: false
+  bill: one
+  voter: five
+
+six:
+  yes_or_no: true
+  bill: two
+  voter: one
+
+seven:
+  yes_or_no: true
+  bill: two
+  voter: two
+
+eight:
+  yes_or_no: true
+  bill: two
+  voter: three
+
+nine:
+  yes_or_no: false
+  bill: two
+  voter: four
+
+ten:
+  yes_or_no: false
+  bill: two
+  voter: five

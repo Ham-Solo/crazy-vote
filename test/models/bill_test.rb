@@ -14,4 +14,9 @@ class BillTest < ActiveSupport::TestCase
     another_bill = Bill.new(name: "Bill 10131", description: "This is a test bill")
     refute another_bill.save
   end
+
+  test "votes percentage" do
+    assert_equal 60, bills(:one).percent_yes
+  end
+  
 end

@@ -3,9 +3,9 @@
 one:
   name: Bill
   description: This is a bill
-  staffer_id: 1
+  staffer: one
 
 two:
-  name: MyString
-  description: MyText
-  staffer_id:
+  name: Bill2
+  description: This is bill 2
+  staffer: one

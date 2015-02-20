@@ -6,6 +6,6 @@ one:
   name: Owen
 
 two:
-  email: MyString
-  password_digest: MyString
-  name: MyString
+  email: sol@sol.com
+  password_digest: password
+  name: Solomon
